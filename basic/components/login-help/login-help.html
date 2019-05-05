@@ -1,0 +1,86 @@
+<ion-content>
+		<div class="login-help-container" [ngStyle]="{'margin-top':isIOS ? '64px' : '0'}">
+			<!-- <ion-grid>
+				<ion-row class="login-help-header" [ngStyle]="{'margin-top':isIOS ? '10px' : '0'}">
+				<ion-col col-11 align-center>
+					<ion-label y2-translate text="basic.help.server" class="login-help-title" style="text-align: center; font-size: 18px;">
+					</ion-label>
+				</ion-col>
+				<ion-col  (click)="dismiss()">
+					<img src="assets/img/help_screen/close-white.svg" alt="closeIcon" width="25px" height="25px;" style="right:0px;">
+				</ion-col>
+				</ion-row>
+			</ion-grid> -->
+			<ion-header>
+	
+			  <ion-navbar color="ytwo-blue" [ngStyle]="{'padding-top':isIOS ? '30px' : '0'}">
+				<ion-title text-center [ngStyle]="{'padding-top':isIOS ? '14px' : '0'}"><y2-translate text="basic.help.server"></y2-translate></ion-title>
+				<ion-buttons end><button (click)="dismiss()" class="help-close"> <img src="assets/img/help_screen/close-white.svg" alt="closeIcon" width="25px" height="25px;" style="right:0px;"></button></ion-buttons>
+				
+			  </ion-navbar>
+	
+			</ion-header>
+	
+			<div class="login-help-config">
+				<ion-grid [ngStyle]="{'margin-top':isIOS ? '0px' : '44px'}">
+					
+					<ion-row class="login-help-header">
+						<ion-col col-1>
+						<img src="assets/img/help_screen/manual-input.svg" alt="closeIcon" width="25px" height="25px;">
+					</ion-col>
+					<ion-col>
+						<ion-label y2-translate text="basic.help.manual" class="login-help-title">
+						</ion-label>
+					</ion-col>
+					</ion-row>
+				</ion-grid>
+				<div class="login-help-manual" y2-translate text="basic.help.manualDetail">
+				</div>
+				<div class="login-help-manualBorder">
+					<div y2-translate text="basic.help.manualExample">
+					</div>
+					<div y2-translate text="basic.help.manualExampleUrl">
+					</div>
+					<div y2-translate text="basic.help.manualExampleServer" style="margin-top:10px;">
+					</div>
+					<div y2-translate text="basic.help.manualExampleServerUrl">
+					</div>
+				</div>
+				<ion-grid>
+					<ion-row class="login-help-header">
+						<ion-col col-1>
+							<img src="assets/img/help_screen/scan-white.svg" alt="scanPic" width="25px" height="25px">
+						</ion-col>
+						<ion-col y2-translate text="basic.help.scan" class="login-help-title">
+						</ion-col>
+					</ion-row>
+					<ion-row style="margin-bottom:0px; padding-bottom:0px;">
+						<ion-col col-8>
+							<div y2-translate text="basic.help.scanDetail" class="login-help-scanDetail">
+							
+							</div>
+						</ion-col>
+						<ion-col style="margin-bottom:0px; padding-bottom:0px;">
+							<img src="assets/img/help_screen/about-web.png" alt="aboutPic" class="login-help-pic">
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+			</div>
+		</div>
+		<div class="login-help-credential">
+			<ion-row>
+				<ion-label y2-translate text="basic.help.loginCredentials" class="login-help-title">
+					
+				</ion-label>
+			</ion-row>
+			<div y2-translate text="basic.help.use">
+				
+			</div>
+			<div y2-translate text="basic.help.unsure" style="margin-top:10px;">
+				
+			</div>
+		</div>
+		
+		
+		
+	</ion-content>

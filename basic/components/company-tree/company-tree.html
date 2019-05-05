@@ -1,0 +1,8 @@
+<!-- Generated template for the CompanyTree component -->
+<ion-list>
+<button ion-item *ngFor="let item of companies" (click)="itemSelected(item)">
+    <svg-icon [width]="16" [height]="16" [svgId]="classByType(item)"></svg-icon>
+    {{item.code}} {{item.name}}
+</button>
+
+</ion-list>

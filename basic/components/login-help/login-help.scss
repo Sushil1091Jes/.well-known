@@ -1,0 +1,134 @@
+@import '../../../css/global.scss';
+login-help {
+	@media screen and (orientation: landscape){
+        .login-help-container{
+            padding-left: calc(constant(safe-area-inset-left) + 26px) !important;
+            padding-left: calc(env(safe-area-inset-left) + 26px) !important;
+            padding-right: calc(constant(safe-area-inset-right) + 26px) !important;
+            padding-right: calc(env(safe-area-inset-right) + 26px) !important;
+		}
+		
+		.login-help-credential{
+			padding-left: calc(constant(safe-area-inset-left) + 30px) !important;
+            padding-left: calc(env(safe-area-inset-left) + 30px) !important;
+            padding-right: calc(constant(safe-area-inset-right) + 30px) !important;
+            padding-right: calc(env(safe-area-inset-right) + 30px) !important;
+		}
+	}
+	.login-help-container{
+		background-color: #4172e5;
+	}
+	.login-help-header{
+		align-items: center;
+		display: flex;
+		background-color: #4172e5;
+		border-bottom: none;
+		color:#fff;
+		/* margin-left: 30px; */
+	}
+	.login-help-title{
+		font-weight: bold;
+		margin: 0;
+	}
+	.help-close{
+		background-color: #4172e5;
+	}
+	.login-help-manual{
+		padding: 0 10px;
+	}
+	.login-help-manualBorder{
+		border: 2px solid #a0b8f2;
+		border-radius: 10px;
+		padding: 8px 8px;
+		margin: 10px;
+	}
+	.login-help-scanDetail{
+		border: 2px solid #a0b8f2;
+		border-radius: 10px;
+		padding: 8px 8px;
+		/* margin: 10px; */
+	}
+	.login-modal{
+        background-color: black;
+        width: 100%;
+    }
+    .login-help-ios{
+    	margin-top:12px;
+    }
+	// for pad
+	@media only screen and (min-height: 508px) and (min-width: 508px){
+		.login-help-config{
+			background-color: #4172e5;
+			color:#fff;
+			padding: 0 10%;
+		}
+		.login-help-pic{
+			margin-left:80px;
+			margin-bottom: 0px!important;
+			padding-bottom: 0px!important;
+		}
+		.login-help-credential{
+			color: #4172e5;
+			padding: 0 10%;
+		}
+	}
+	// for mobile phone
+	@media only screen and (max-height: 900px) and (max-width: 508px){
+		.login-help-config{
+			background-color: #4172e5;
+			color:#fff;
+		}
+		.login-help-pic{
+			margin-left:10px;
+			height:110px;
+			margin-bottom: 0px!important;
+			padding-bottom: 0px!important;
+		}
+		.login-help-credential{
+			color: #4172e5;
+			padding: 10px;
+		}
+	}
+	// for mobile phone landscape
+    @media only screen and (max-height: 508px) and (max-width: 900px) and (orientation: landscape){
+		.login-help-config{
+			background-color: #4172e5;
+			color:#fff;
+		}
+		.login-help-pic{
+			margin-left:10px;
+			height:110px;
+			margin-bottom: 0px!important;
+			padding-bottom: 0px!important;
+		}
+		.login-help-credential{
+			color: #4172e5;
+			padding: 8px;
+			margin: 0 27px 20px 27px;
+		}
+		.login-help-manual{
+			padding: 0 10px;
+			margin: 0 25px;
+		}
+		.login-help-manualBorder{
+			border: 2px solid #a0b8f2;
+			border-radius: 10px;
+			// padding: 8px 8px;
+			margin: 10px 33px!important;
+		}
+		.login-help-header{
+			margin: 0 25px;
+		}
+		.login-help-scanDetail{
+			border: 2px solid #a0b8f2;
+			border-radius: 10px;
+			padding: 8px 8px;
+			margin: 0 25px;
+			/* margin: 10px;  */
+		}
+		.help-close{
+			margin-right: 33px;
+			padding-bottom: 8px
+		}
+	}
+}

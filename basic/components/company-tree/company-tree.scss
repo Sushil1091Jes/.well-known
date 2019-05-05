@@ -1,0 +1,23 @@
+company-tree {
+    .alert-md .alert-head{
+        text-align: center !important;
+    }
+}
+
+.alertCustomCss{
+    
+    div.alert-head{
+        text-align: center !important;
+    }
+
+    .alert-md .alert-title{
+        text-align: center !important;
+    }
+
+    .alert-tappable:last-child{
+       // border-bottom: none !important;
+    }
+    .alert-tappable{
+        border-bottom: 0.5px solid #dddde0 !important;
+    }
+}

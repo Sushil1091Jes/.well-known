@@ -1,0 +1,229 @@
+@import '../../../css/global.scss';
+page-login-page {
+    input {
+        border-radius: 0!important;
+    }
+    #particles {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        width: 100%;
+        z-index: 0;
+        height: 100%;
+    }
+    .login-help{
+        margin-left:92%;
+    }
+
+     ion-backdrop{
+        background : red !important;
+        top : 44px !important;
+    }
+    // for pad vertical
+    @media only screen and (min-device-height: 900px) and (min-device-width: 508px){
+        ion-fab{
+             top:80%;
+            right: 21%!important;
+        }
+        button.login-button {
+            padding:25px 0;
+        }
+        .login-main{
+            margin-left:20%;
+            height: 70%;
+            width: 60%;
+            padding-top: 25vh!important;
+            .logo-img {
+                text-align: center; 
+                margin-bottom: 20px;
+            }
+        }
+    }
+    // for pad landscape
+    @media only screen and (min-device-height: 508px) and (min-device-width: 900px){
+        ion-fab{
+            top:600px;
+            right: 31%!important;
+        }
+        button.login-button {
+            padding:25px 0;
+        }
+        .login-main{
+            margin-left:30%;
+            height: 80%;
+            width: 40%;
+            padding-top: 15vh!important;
+            .logo-img {
+                text-align: center; 
+                margin-bottom: 20px;
+            }
+        }
+    }
+    //for high resolution pad vertical
+    @media only screen and (min-device-height: 1300px) and (min-device-width: 1000px){
+        .login-main{
+            margin-left:20%;
+            height: 70%;
+            width: 60%;
+            padding-top: 25vh!important;
+            .logo-img {
+                text-align: center; 
+                margin-bottom: 20px;
+            }
+        }
+        ion-fab{
+            top:800px;
+            right: 21%!important;
+        }
+    }
+    // for mobile phone
+    @media only screen and (max-device-height: 900px) and (max-device-width: 508px){
+        .login-main {
+            height: 100%;
+            width: 100%;
+            padding-top: 10vh!important;
+            .logo-img {
+                text-align: center; 
+                margin-bottom: 20px;
+            }
+        }
+        ion-fab{
+            right: 10px!important;
+        }
+    }
+    // for mobile landscape
+    @media only screen and (max-device-height: 508px) and (max-device-width: 900px){
+        .login-main {
+            height: 100%;
+            width: 100%;
+            padding-top: 1vh!important;
+            .logo-img {
+                text-align: center; 
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+    ion-list {
+        width: 100%;
+    }
+    ion-list ion-item {
+        background-color: transparent!important;
+        border: none!important;
+        padding: 0!important;
+    }
+    .item-inner {
+        border-bottom: 0.55px solid blue!important;
+        padding-left: 8px;
+    }
+    button.login-button {
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+    .app-name {
+        position: absolute;
+        text-align: center;
+        left: 0; right: 0;
+        bottom: 20px;
+    }
+    .login-form-list{
+        
+    }
+    .login-form-label{
+        border-bottom: none;
+        padding-left: 8px;
+        font-size:1.7rem;
+        color:#000;
+        margin:8px 0 0 0!important;
+    }
+
+    .login-form{
+        height:50px;
+        border:none;
+        border-bottom: solid 1px #c8c7cc;
+        padding-left: 8px;
+        font-size:1.7rem;
+        color:#000;
+        width:100%;
+    }
+
+    .login-form-serverUrl{
+        right:10%;
+        width:85%;
+        left:0px;
+        float:left;
+    }
+    .login-scanner{
+        margin-left:5%;
+        margin-top:10px;
+    }
+    input.login-form:focus{
+        border-bottom-color:#4172e5;
+    }
+    input.login-form:blur{
+        border-bottom-color:#c8c7cc;
+    }
+    .login-modal{
+        background-color: black;
+        width: 100%;
+    }
+
+    @media screen and (orientation: landscape){
+        .login-main{
+            padding-left: calc(constant(safe-area-inset-left) + 16px);
+            padding-left: calc(env(safe-area-inset-left) + 16px);
+            padding-right: calc(constant(safe-area-inset-right) + 16px);
+            padding-right: calc(env(safe-area-inset-right) + 16px);
+        }
+
+        ion-list{
+            // padding-left: calc(constant(safe-area-inset-left) + 16px);
+            // padding-left: calc(env(safe-area-inset-left) + 16px);
+            // padding-right: calc(constant(safe-area-inset-right) + 16px);
+            // padding-right: calc(env(safe-area-inset-right) + 16px);
+
+            width:70% !important;
+            position: relative !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .login-button{
+            width:70% !important;
+            position: relative !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        ion-fab{
+            right: 30px!important;
+        }
+
+        ion-fab{
+            right:calc(constant(safe-area-inset-right) + 16px) !important;
+            right: calc(env(safe-area-inset-right) + 16px) !important;
+        }
+
+        .bttn-wrap{
+            padding-left: calc(constant(safe-area-inset-left) + 16px);
+            padding-left: calc(env(safe-area-inset-left) + 16px);
+            padding-right: calc(constant(safe-area-inset-right) + 16px);
+            padding-right: calc(env(safe-area-inset-right) + 16px);
+        }
+    }
+}
+
+.alertCustomCss .alert-wrapper{
+    width: 90% !important;
+    max-width: 90% !important;
+    overflow: scroll !important;
+
+}
+
+ion-alert.alert-ios.cg ion-backdrop{
+    top:0px !important;
+}
+
+ion-backdrop{
+    top:44px !important;
+}
+

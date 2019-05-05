@@ -1,0 +1,7 @@
+<!-- Generated template for the LoginLanguageList component -->
+  <ion-fab right bottom #fab>
+    <button ion-fab color="light">{{selected}}</button>
+    <ion-fab-list side="left">
+      <button ion-fab *ngFor="let item of languageList" (click)="changeLang(item)">{{item}}</button>
+    </ion-fab-list>
+  </ion-fab>

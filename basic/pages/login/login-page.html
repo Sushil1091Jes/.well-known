@@ -1,0 +1,25 @@
+<ion-content>
+  <div  padding class="login-main">
+  <div class="login-help" (click)="openHelpModal()">
+    <img src="assets/img/help_screen/help.svg" alt="helpPic" height="25px" width="25px">
+  </div>
+    <div class="logo-img">
+          <img width="200px" height="100px" src="assets/img/ytwo-logo.jpg" />
+    </div>
+    <form>
+    <ion-list class="login-form-list">
+      <input [placeholder]="'basic.username' | translate" class="login-form" type="text" [(ngModel)]="formData.username" name="first" >
+      <input [placeholder]="'basic.password' | translate" class="login-form" type="password" [(ngModel)]="formData.password" name="second" >
+      <div [hidden]="isFromLogout == 'Y'">
+        <input [placeholder]="'basic.serverURL' | translate" [(ngModel)]="formData.serverURL" class="login-form login-form-serverUrl" type="text" name="third">
+        <img src="assets/img/scanURL.svg" width="25px" height="25px" alt="scannerPic" class="login-scanner" (click)="openScanner()">
+      </div>
+    </ion-list>
+  </form>
+    <button button-block type="button" class="login-button" [hidden]="isFromLogout == 'N'" (click)="serverConfig()" ion-button block  color="light"><y2-translate [text]="'basic.server'"></y2-translate></button>
+    <button button-block type="button" class="login-button" (click)="login()" ion-button block  color="ytwo-blue"><y2-translate [text]="'basic.login'"></y2-translate></button>
+    <login-language-list></login-language-list>
+</div>
+<div ion-fixed id="particles"></div>
+  <!-- <div class="app-name" y2-translate text="basic.appName"></div> -->
+</ion-content>
